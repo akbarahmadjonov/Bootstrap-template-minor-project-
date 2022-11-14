@@ -1,0 +1,77 @@
+/* General css */
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  vertical-align: middle;
+  object-fit: cover;
+}
+/* General end */
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.container-fluid strong {
+  margin: 0 0 0 2px;
+  font-size: 16px;
+  color: #fff;
+}
+/* Header */
+.album {
+  width: 550px;
+}
+
+.album h1 {
+  font-weight: normal;
+}
+
+.album p {
+  opacity: 0.9;
+}
+
+.containersep {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 560px) {
+  .album {
+    width: 60%;
+  }
+
+  .album a {
+    margin: 0 0 10px 0;
+  }
+}
+
+@media only screen and (max-width: 383px) {
+  .album p {
+    font-size: 14px;
+  }
+}
